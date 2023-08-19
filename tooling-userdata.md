@@ -11,8 +11,8 @@ systemctl start php-fpm
 systemctl enable php-fpm
 git clone https://github.com/Johnstx/tooling.git
 mkdir /var/www/html
-cp -R /tooling-1/html/*  /var/www/html/
-cd /tooling-1
+cp -R /tooling/html/*  /var/www/html/
+cd /tooling
 mysql -h acs-database.c6t0owlaicvv.us-east-2.rds.amazonaws.com -u ACSadmin -p toolingdb < tooling-db.sql
 cd /var/www/html/
 touch healthstatus
